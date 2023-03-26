@@ -29,7 +29,7 @@ public class View {
             System.out.println("3. Traducir texto al Francés");
             System.out.println("4. Mostrar relaciones");
             System.out.println("5. Salir");
-            System.out.println("");
+            System.out.println("-->");
             try{
                 scan = new Scanner(System.in);
                 op = scan.nextInt();

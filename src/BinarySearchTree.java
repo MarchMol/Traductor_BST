@@ -56,12 +56,6 @@ public class BinarySearchTree {
     private void printAsociacionesInternas(TreeNode actualNode) {
         if (actualNode != null) {
             System.out.println("Clave: " + actualNode.Key + ", Valor: " + actualNode.Value);
-            if (actualNode.Left != null) {
-                System.out.println("Relación con nodo izquierdo: Clave: " + actualNode.Left.Key + ", Valor: " + actualNode.Left.Value);
-            }
-            if (actualNode.Right != null) {
-                System.out.println("Relación con nodo derecho: Clave: " + actualNode.Right.Key + ", Valor: " + actualNode.Right.Value);
-            }
             printAsociacionesInternas(actualNode.Left);
             printAsociacionesInternas(actualNode.Right);
         }
