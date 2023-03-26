@@ -1,8 +1,17 @@
 public class BinarySearchTree {
+
+    /*
+     * Estructura general del BST obtenida de ChatGPT
+     * Alterada y simplificada para los propósitos de la hoja de trabajo
+     *
+     */
+
     TreeNode root;
+    boolean isEmpty;
 
     public BinarySearchTree() {
         this.root = null;
+        isEmpty = true;
     }
 
     public void insert(String key, String value) {
@@ -10,6 +19,7 @@ public class BinarySearchTree {
 
         if (this.root == null) {
             this.root = newNode;
+            isEmpty=false;
         } else {
             internalInsert(this.root, newNode);
         }
@@ -55,7 +65,7 @@ public class BinarySearchTree {
 
     private void printAsociacionesInternas(TreeNode actualNode) {
         if (actualNode != null) {
-            System.out.println("Clave: " + actualNode.Key + ", Valor: " + actualNode.Value);
+            System.out.println("(" + actualNode.Key + "," + actualNode.Value+")");
             printAsociacionesInternas(actualNode.Left);
             printAsociacionesInternas(actualNode.Right);
         }

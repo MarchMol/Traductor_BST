@@ -89,6 +89,7 @@ public class Main {
         }
     }
 
+    // detecta el idioma y regresa un entero
     public static int detectarIdioma(String[] textoAr){
         for (String st: textoAr){
             if(Ingles.search(st)!=null){

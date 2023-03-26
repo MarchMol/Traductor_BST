@@ -1,4 +1,11 @@
 public class TreeNode {
+
+    /*
+     * Estructura general del TreeNode obtenida de ChatGPT
+     * Alterada y simplificada para los propósitos de la hoja de trabajo
+     *
+     */
+
     String Key;
     String Value;
 
